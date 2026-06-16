@@ -1,0 +1,27 @@
+{
+    "selected_features": [
+        "no_of_dependents",
+        "education",
+        "self_employed",
+        "income_annum",
+        "loan_amount",
+        "loan_term",
+        "cibil_score"
+    ],
+    "categorical_features": [
+        "education",
+        "self_employed"
+    ],
+    "numeric_features": [
+        "no_of_dependents",
+        "income_annum",
+        "loan_amount",
+        "loan_term",
+        "cibil_score"
+    ],
+    "target_col": "loan_status",
+    "target_mapping": {
+        "Approved": 1,
+        "Rejected": 0
+    }
+}

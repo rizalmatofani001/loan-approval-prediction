@@ -1,3 +1,9 @@
+import subprocess
+import os
+
+# Menjalankan train_model.py otomatis jika folder models masih kosong
+if not os.path.exists('models') or len(os.listdir('models')) <= 1:
+    subprocess.run(["python", "train_model.py"])
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
